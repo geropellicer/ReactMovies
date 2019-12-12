@@ -62,7 +62,7 @@ const AddMovieForm = () => {
             <div className="row">
                 <label htmlFor="image">Main image</label>
                 <input value={img} onChange={updateImg} type="text" placeholder="url to a great image..." name="image"/>
-                <img src={img}/>
+                <img className="add-movie-img-prvw" src={img}/>
             </div>
             
             <div className="row">

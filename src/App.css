@@ -153,3 +153,8 @@ form button {
 .movie-row > :nth-child(3){
   margin-left: 24px;
 }
+
+.add-movie-img-prvw {
+  width: 200px;
+  margin-left: 24px;
+}
