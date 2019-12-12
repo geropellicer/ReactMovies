@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #121212;
 }
 
 .App-logo {
@@ -38,6 +39,9 @@
   }
 }
 
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
 
 .nav{
   height: 100px;
@@ -51,7 +55,7 @@
   padding: 12px 50px;
 }
 
-.nav h1, .nav h6 {
+.nav h1, .nav h6, form h2 {
   margin: 0;
 }
 .site-catalog-state {
@@ -66,4 +70,48 @@
 .site-catalog-state span{
   font-size: 18px;
   font-weight: 900;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 0px 10px 1px rgba(255,255,255, .9);
+  margin: 24px;
+  padding: 36px 98px;
+  border-radius: 6px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.row:last-child{
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+form label {
+  margin-right: 24px;
+}
+form input, form textarea{
+  flex-grow: 1;
+  padding: 12px;
+}
+
+
+form button {
+  padding: 12px 36px;
+  width: 90%;
+  background: rgb(100,200,100);
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
 }

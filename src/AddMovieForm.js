@@ -51,27 +51,41 @@ const AddMovieForm = () => {
 
     return(
         <form onSubmit={addMovie}>
-            <label htmlFor="title">Movie title</label>
-            <input value={title} onChange={updateTitle} type="text" placeholder="Enter a great title..." name="title"/>
-            
-            <label htmlFor="image">Main image</label>
-            <input value={img} onChange={updateImg} type="text" placeholder="url to a great image..." name="image"/>
-            <img src={img}/>
-            
-            <label htmlFor="price">Price ($)</label>
-            <input value={price} onChange={updatePrice} type="number" placeholder="99" name="price" />
-            
-            <label htmlFor="id">Unique ID</label>
-            <input value={id} onChange={updateId} type="text" placeholder="######" name="id"/>
-            
-            <label htmlFor="description">description</label>
-            <textarea value={description} onChange={updateDescription} name="description">
+            <div className="row">
+                <h2>Add movie to collection</h2>
+            </div>
+            <div className="row">
+                <label htmlFor="title">Movie title</label>
+                <input value={title} onChange={updateTitle} type="text" placeholder="Enter a great title..." name="title"/>
+            </div>
 
-            </textarea>
+            <div className="row">
+                <label htmlFor="image">Main image</label>
+                <input value={img} onChange={updateImg} type="text" placeholder="url to a great image..." name="image"/>
+                <img src={img}/>
+            </div>
+            
+            <div className="row">
+                <label htmlFor="price">Price ($)</label>
+                <input value={price} onChange={updatePrice} type="number" placeholder="99" name="price" />
+            </div>
 
-            <button onClick={addMovie} type="submit">
-                Add movie!
-            </button>
+            <div className="row">
+                <label htmlFor="id">Unique ID</label>
+                <input value={id} onChange={updateId} type="text" placeholder="######" name="id"/>
+            </div>
+
+            <div className="row">
+                <label htmlFor="description">Description</label>
+                <textarea value={description} onChange={updateDescription} name="description">
+                </textarea>
+            </div>
+
+            <div className="row">
+                <button onClick={addMovie} type="submit">
+                    Add movie!
+                </button>
+            </div>
         </form>
     );
 };
